@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+ 
+body{
+    background-color: black;
+}
+
+p{
+    color: white;
+}
+.main__div{
+    display: flex;
+    align-items: center;
+
+}
+.div__cat__header{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+h1 {
+    color: white;
+    padding: 15px;
+    font-weight: bolder;
+}
+.h1__f__strong{
+    background-color: blue;
+    color: white;
+}
+.h1__point__strong{
+    color: blue;
+    
+}
+
+.p__nav__header{
+    padding: 15px;
+}

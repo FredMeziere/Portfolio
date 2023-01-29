@@ -72,6 +72,11 @@ h1 {
     font-size: 22px;
 }
 
+.p__nav__header__1:hover{
+    background-color: rgb(79, 175, 127);
+    border-radius: 5px;
+}
+
 /* A Propos */
 
 .p__nav__header__2 {
@@ -81,7 +86,10 @@ h1 {
     padding-bottom: 5px;
     font-size: 22px;
 }
-
+.p__nav__header__2:hover{
+    background-color: rgb(79, 175, 127);
+    border-radius: 5px;
+}
 /* Mes réalisations */
 
 .p__nav__header__3 {
@@ -91,7 +99,10 @@ h1 {
     padding-bottom: 5px;
     font-size: 22px;
 }
-
+.p__nav__header__3:hover{
+    background-color: rgb(79, 175, 127);
+    border-radius: 5px;
+}
 /* Contact */
 
 .p__nav__header__4 {
@@ -102,7 +113,14 @@ h1 {
     padding-bottom: 5px;
     font-size: 22px;
 }
+.p__nav__header__4:hover{
+    background-color: rgb(79, 175, 127);
+    border-radius: 5px;
+}
+.blue:hover{
+    color: black;
 
+}
 /* ######### PARTIE MAIN ######### */
 
 main {
@@ -118,16 +136,18 @@ main {
     color: white;
     text-align: center;
     background-color: black;
-    margin-top: 50px;
+    margin-top: 15px;
     padding-top: 300px;
     padding-bottom: 300px;
     font-size: 48px;
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 .span__main__div__h2 {
-    color: white;
-    font-size: 16px;
+    color: rgb(30, 29, 49);
+    font-size: 32px;
+    background-color: rgb(79, 175, 127);
+    padding: 5px;
 }
 
 .span__point__main__div__h2 {

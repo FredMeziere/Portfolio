@@ -3,38 +3,131 @@
 }
  
 body{
-    background-color: black;
+    background: rgb(30, 29, 49);
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
 }
 
 p{
     color: white;
 }
+
 .main__div{
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
 }
+
 .div__cat__header{
-    width: 90%;
+    width: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }
+
 h1 {
+    margin-left: 15px;
     color: white;
-    padding: 15px;
     font-weight: bolder;
-}
-.h1__f__strong{
-    background-color: blue;
-    color: white;
-}
-.h1__point__strong{
-    color: blue;
     
 }
 
-.p__nav__header{
-    padding: 15px;
+.h1__f__strong{
+    background-color: rgb(79, 175, 127);
+    color: white;
+    font-size: 48px;
+    padding: 5px;
+}
+
+.h1__point__strong{
+    color: rgb(79, 175, 127);
+    font-size: 48px;
+}
+
+/* Décoration des 4 <a> de la nav +h1 */
+.h1__color {
+    text-decoration: none;
+}
+
+.white {
+    color: white;
+    text-decoration: none;
+}
+
+.blue {
+    color: rgb(79, 175, 127);
+    text-decoration: none;
+}
+
+/*Acceuil */
+
+  .p__nav__header__1{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 22px;
+}
+
+/* A Propos */
+
+.p__nav__header__2{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 22px;
+}
+
+/* Mes réalisations */
+
+.p__nav__header__3{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 22px;
+}
+
+/* Contact */
+
+.p__nav__header__4{
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 22px;
+}
+
+/* ######### PARTIE MAIN ######### */
+
+main {
+    align-items: center;
+    align-content: center ;
+}
+.div__main__intro {
+     align-items: center;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+/* ######### PARTIE FOOTER ######### */
+
+footer {
+    background-color: rgb(79, 175, 127); 
+    position: absolute;
+    bottom: 0;
+    width: 99.5%;
+    text-align: center;
+    color: rgb(30, 29, 49);
+}
+
+.p__footer {
+    color: rgb(30, 29, 49);
 }

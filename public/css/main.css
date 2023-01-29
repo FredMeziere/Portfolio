@@ -1,25 +1,26 @@
 * {
     box-sizing: border-box;
 }
- 
-body{
+
+body {
     background: rgb(30, 29, 49);
     font-family: 'Roboto Slab', serif;
     display: flex;
     flex-direction: column;
+    width: auto;
 }
 
-p{
+p {
     color: white;
 }
 
-.main__div{
+.main__div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.div__cat__header{
+.div__cat__header {
     width: 100vh;
     display: flex;
     flex-direction: row;
@@ -31,17 +32,17 @@ h1 {
     margin-left: 15px;
     color: white;
     font-weight: bolder;
-    
+
 }
 
-.h1__f__strong{
+.h1__f__strong {
     background-color: rgb(79, 175, 127);
     color: white;
     font-size: 48px;
     padding: 5px;
 }
 
-.h1__point__strong{
+.h1__point__strong {
     color: rgb(79, 175, 127);
     font-size: 48px;
 }
@@ -63,7 +64,7 @@ h1 {
 
 /*Acceuil */
 
-  .p__nav__header__1{
+.p__nav__header__1 {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
@@ -73,7 +74,7 @@ h1 {
 
 /* A Propos */
 
-.p__nav__header__2{
+.p__nav__header__2 {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
@@ -83,7 +84,7 @@ h1 {
 
 /* Mes réalisations */
 
-.p__nav__header__3{
+.p__nav__header__3 {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
@@ -93,7 +94,7 @@ h1 {
 
 /* Contact */
 
-.p__nav__header__4{
+.p__nav__header__4 {
     margin-right: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -106,21 +107,38 @@ h1 {
 
 main {
     align-items: center;
-    align-content: center ;
-}
-.div__main__intro {
-     align-items: center;
+    align-content: center;
 }
 
-h2 {
+.div__main__intro {
+    align-items: center;
+}
+
+.h2__div__main {
     color: white;
     text-align: center;
+    background-color: black;
+    margin-top: 50px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    font-size: 48px;
+    border-radius: 5%;
+}
+
+.span__main__div__h2 {
+    color: white;
+    font-size: 16px;
+}
+
+.span__point__main__div__h2 {
+    color: rgb(79, 175, 127);
+    font-size: 32px;
 }
 
 /* ######### PARTIE FOOTER ######### */
 
 footer {
-    background-color: rgb(79, 175, 127); 
+    background-color: rgb(79, 175, 127);
     position: absolute;
     bottom: 0;
     width: 99.5%;
@@ -130,4 +148,5 @@ footer {
 
 .p__footer {
     color: rgb(30, 29, 49);
+    font-weight: 600;
 }

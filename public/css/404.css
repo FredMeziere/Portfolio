@@ -1,0 +1,12 @@
+.main__div__404 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.p__404 {
+font-family: 'Roboto Slab', serif;
+color: blue;
+}

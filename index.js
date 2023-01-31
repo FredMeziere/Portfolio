@@ -10,14 +10,10 @@ app.set('views', './app/views');
 
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-    res.render('accueil');
-  });
-
-  app.use(router);
+app.use(router);
 
 app.listen(PORT, () => {
-console.log(`Server ready : https://localhost:${PORT}`);
+console.log(`Server ready : http://localhost:${PORT}`);
 });
 
 

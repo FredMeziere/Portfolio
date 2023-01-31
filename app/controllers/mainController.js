@@ -3,7 +3,7 @@ const mainController = {
       res.render('main/accueil');
     },
     notFound: (req, res) => {
-      res.status(404).render('main/notFound');
+      res.status(404).render('404/404');
     },
   };
   

@@ -1,18 +1,25 @@
-
+require('dotenv').config();
 const express = require('express');
-const router = require ('./app/routers');
+const app = express();
+app.use(express.static("public"));
 
 const port = process.env.PORT || 3000;
-
-const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', './app/views');
 
-app.use(express.static(path.join(_dirname, './public')));
 
-app.use(router);
+app.get("/", (req, res) => {
+    res.render('accueil');
+  });
+
 
 app.listen(port, () => {
-console.log(`Server ready : hhtps://localhost:${port}`);
-})
+console.log(`Server ready : https://localhost:${port}`);
+});
+
+
+
+
+
+

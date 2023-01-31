@@ -1,4 +1,7 @@
 const mainController = {
+
+/* Controlleur de toutes les routes du sites */
+
     home: (req, res) => {
       res.render('main/accueil');
     },
@@ -16,7 +19,7 @@ const mainController = {
     },
 
     notFound: (req, res) => {
-      res.status(404).render('404/404');
+      res.status(404).render('error/404');
     },
   };
   

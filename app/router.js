@@ -2,13 +2,13 @@ const router = require('express').Router();
 
 const mainController = require ('./controllers/mainController');
 
-router.get('/', mainController.home);
+router.get('/main', mainController.home);
 
 router.get('/apropos', mainController.about);
 
-router.get('/realisations', mainController.home);
+router.get('/realisations', mainController.realisations);
 
-router.get('/contact', mainController.about);
+router.get('/contact', mainController.contact);
 
 router.use(mainController.notFound);
 

@@ -11,7 +11,7 @@ const mainController = {
     },
 
     realisations: (req, res) => {
-      res.render('main/relisations');
+      res.render('main/realisations');
     },
 
     contact: (req, res) => {

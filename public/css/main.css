@@ -75,14 +75,17 @@ h1 {
 .p__nav__header__1 {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 22px;
+    border: 1px solid rgb(79, 175, 127);
+    border-radius: 5px;
 }
 
 .p__nav__header__1:hover{
     background-color: rgb(79, 175, 127);
     border-radius: 5px;
+    transition-delay: 0.2s;
 }
 
 /* A Propos */
@@ -90,26 +93,29 @@ h1 {
 .p__nav__header__2 {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 22px;
 }
 .p__nav__header__2:hover{
     background-color: rgb(79, 175, 127);
     border-radius: 5px;
+    transition-delay: 0.2ms;
 }
 /* Mes réalisations */
 
 .p__nav__header__3 {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 22px;
 }
+
 .p__nav__header__3:hover{
     background-color: rgb(79, 175, 127);
     border-radius: 5px;
+    transition-delay: 0.2ms;
 }
 /* Contact */
 
@@ -117,17 +123,21 @@ h1 {
     margin-right: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 22px;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 .p__nav__header__4:hover{
     background-color: rgb(79, 175, 127);
     border-radius: 5px;
+    color: black;
+    transition-delay: 0.2ms;
 }
+
 .blue:hover{
     color: black;
-
 }
 /* ######### PARTIE MAIN ######### */
 
@@ -145,10 +155,12 @@ main {
     text-align: center;
     background-color: black;
     margin-top: 15px;
-    padding-top: 300px;
-    padding-bottom: 300px;
-    font-size: 48px;
+    padding-top: 220px;
+    padding-bottom: 250px;
+    font-size: 96px;
     border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .span__main__div__h2 {

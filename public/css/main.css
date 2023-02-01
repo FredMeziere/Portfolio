@@ -60,16 +60,6 @@ h1 {
     background-color: white;
 }
 
-.white {
-    color: white;
-    text-decoration: none;
-}
-
-.blue {
-    color: rgb(79, 175, 127);
-    text-decoration: none;
-}
-
 /*Acceuil */
 
 .p__nav__header__1 {
@@ -85,7 +75,12 @@ h1 {
 .p__nav__header__1:hover{
     background-color: rgb(79, 175, 127);
     border-radius: 5px;
-    transition-delay: 0.2s;
+    transition-delay: 0.15s;
+}
+
+.nav__1 {
+    color: white;
+    text-decoration: none;
 }
 
 /* A Propos */
@@ -100,8 +95,15 @@ h1 {
 .p__nav__header__2:hover{
     background-color: rgb(79, 175, 127);
     border-radius: 5px;
-    transition-delay: 0.2ms;
+    transition-delay: 0.15s;
 }
+
+.nav__2 {
+    color: white;
+    text-decoration: none;
+}
+
+
 /* Mes réalisations */
 
 .p__nav__header__3 {
@@ -115,10 +117,16 @@ h1 {
 .p__nav__header__3:hover{
     background-color: rgb(79, 175, 127);
     border-radius: 5px;
-    transition-delay: 0.2ms;
+    transition-delay: 0.15s;
 }
-/* Contact */
 
+.nav__3 {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Contact */
 .p__nav__header__4 {
     margin-right: 15px;
     padding-left: 15px;
@@ -128,17 +136,26 @@ h1 {
     font-size: 22px;
     border: 1px solid white;
     border-radius: 5px;
+    
 }
-.p__nav__header__4:hover{
+.p__nav__header__4:hover {
     background-color: rgb(79, 175, 127);
     border-radius: 5px;
-    color: black;
-    transition-delay: 0.2ms;
+    
 }
 
-.blue:hover{
-    color: black;
+.nav__4 {
+    text-decoration: none;
+    color: rgb(79, 175, 127);
 }
+
+.p__nav__header__4:hover .nav__4 {
+    color: black;
+    background-color: rgb(79, 175, 127);
+    transition-delay: 0.15s;
+}
+
+
 /* ######### PARTIE MAIN ######### */
 
 main {

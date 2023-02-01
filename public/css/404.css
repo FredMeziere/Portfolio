@@ -3,10 +3,39 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-
+    margin-top: 100px;
 }
 
 .p__404 {
-font-family: 'Roboto Slab', serif;
-color: blue;
+    color: white;
 }
+
+img {
+    margin: 20px;
+    max-width: 15%;
+    max-height: 15%;
+}
+.p__404__linkedin {
+    margin-top: 70px;
+}
+
+.p__404__linkedin .link__linkedin__404  {
+    color: rgb(79, 175, 127);
+    text-decoration: none;
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.p__404__main {
+    border: 1px white solid;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+
+.link__main__404{
+    color: rgb(79, 175, 127);
+    text-decoration: none;
+} 

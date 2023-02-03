@@ -38,7 +38,7 @@ h1 {
 }
 
 .h1__f__strong {
-    background-color: rgb(79, 175, 127);
+    background: linear-gradient(15deg, rgba(76,150,107,1) 0%, rgba(79,175,127,1) 100%);
     color: white;
     font-size: 48px;
     padding: 5px;
@@ -204,7 +204,7 @@ main {
 /* ######### PARTIE FOOTER ######### */
 
 footer {
-    background-color: rgb(79, 175, 127);
+    background: linear-gradient(15deg, rgba(76,150,107,1) 0%, rgba(79,175,127,1) 100%);
     position: absolute;
     bottom: 0;
     width: 99.5%;

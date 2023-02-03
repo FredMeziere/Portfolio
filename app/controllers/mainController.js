@@ -1,7 +1,6 @@
 const mainController = {
-
+  
 /* Controlleur de toutes les routes du sites */
-
     home: (req, res) => {
       res.render('main/accueil');
     },
@@ -19,8 +18,9 @@ const mainController = {
     },
 
     notFound: (req, res) => {
-      res.status(404).render('error/404');
+      res.status(404).render('error/404', {styles: ['404']});
     },
+
   };
   
   module.exports = mainController;

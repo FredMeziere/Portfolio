@@ -8,7 +8,7 @@
   }
   .linkedin__link {
     text-decoration: none;
-    color: rgb(79, 175, 127);
+    color: $primary-color;
   }
 
    h1 {
@@ -42,7 +42,6 @@
     border-radius: 10px;
     font-size: 16px;
     font-weight: 500;
-    font-family: Montserrat, "sans-serif";
     box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.25);
   }
   
@@ -66,7 +65,7 @@
   
   form div  select option {
     background: white;
-    color: rgb(79, 175, 127);
+    color: $primary-color;
   }
   
   form div:last-child {
@@ -84,7 +83,7 @@
     border: rgba(48, 48, 48, 0.5) solid 1px;
     border-radius: 5px;
     box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
-    color: rgb(79, 175, 127);
+    color: $primary-color;
     margin-top: 10px;
   }
 

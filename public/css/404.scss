@@ -20,7 +20,7 @@ img {
 }
 
 .p__404__linkedin .link__linkedin__404  {
-    color: rgb(79, 175, 127);
+    color: $primary-color;
     text-decoration: none;
     border: 1px white solid;
     border-radius: 5px;
@@ -34,8 +34,7 @@ img {
     
 }
 
-
 .link__main__404{
-    color: rgb(79, 175, 127);
+    color: $primary-color;
     text-decoration: none;
 } 

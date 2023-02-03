@@ -8,7 +8,7 @@ body {
   font-family: "Roboto Slab", serif;
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 99.5%;
 }
 
 p {
@@ -54,7 +54,6 @@ h1 {
 }
 
 .h1__f__strong:hover {
-  color: rgb(79, 175, 127);
   background-color: white;
 }
 
@@ -145,7 +144,6 @@ h1 {
 .p__nav__header__4:hover .nav__4 {
   color: black;
   background-color: rgb(79, 175, 127);
-  transition-delay: 0.15s;
 }
 
 /* ######### PARTIE MAIN ######### */
@@ -165,7 +163,7 @@ main {
   margin-top: 15px;
   padding-top: 220px;
   padding-bottom: 250px;
-  font-size: 96px;
+  font-size: 90px;
   border-radius: 15px;
   margin-left: 20px;
   margin-right: 20px;
@@ -191,22 +189,6 @@ main {
   font-size: 32px;
 }
 
-/* ######### PARTIE FOOTER ######### */
-footer {
-  background: linear-gradient(15deg, rgb(76, 150, 107) 0%, rgb(79, 175, 127) 100%);
-  position: absolute;
-  bottom: 0;
-  width: 99.5%;
-  text-align: center;
-  color: rgb(30, 29, 49);
-}
-
-.p__footer {
-  color: rgb(30, 29, 49);
-  font-weight: 600;
-}
-
-/*@import './reset.scss';*/
 .main__div__404 {
   display: flex;
   align-items: center;
@@ -293,7 +275,6 @@ form div input, form div select, form div textarea {
   border-radius: 10px;
   font-size: 16px;
   font-weight: 500;
-  font-family: Montserrat, "sans-serif";
   box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.25);
 }
 
@@ -342,6 +323,22 @@ form button {
 label {
   color: white;
   text-align: center;
+}
+
+/* ######### PARTIE FOOTER ######### */
+footer {
+  background: linear-gradient(15deg, rgb(76, 150, 107) 0%, rgb(79, 175, 127) 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 99.9%;
+  text-align: center;
+  color: rgb(30, 29, 49);
+}
+
+.p__footer {
+  color: rgb(30, 29, 49);
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=index.css.map */

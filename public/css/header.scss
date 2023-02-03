@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(30, 29, 49);
+    font-family: $font-family;
+    display: flex;
+    flex-direction: column;
+    width: 99.5%;
+}
+
+p {
+    color: white;
+}
+
+/* Décoration des 4 <a> de la nav +h1 */
+
+.main__div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div__cat__header {
+    width: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h1 {
+    margin-left: 15px;
+    color: white;
+    font-weight: bolder;
+
+}
+
+.h1__f__strong {
+    background: linear-gradient(15deg, rgba(76,150,107,1) 0%, rgba(79,175,127,1) 100%);
+    color: white;
+    font-size: 48px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.h1__point__strong {
+    color: $primary-color;
+    font-size: 48px;
+}
+
+.h1__color {
+    text-decoration: none;
+}
+
+.h1__f__strong:hover {
+    background-color: white;
+}
+
+/*Acceuil */
+
+.p__nav__header__1 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+}
+
+.p__nav__header__1:hover{
+    background-color: $primary-color;
+    border-radius: 5px;
+    transition-delay: 0.15s;
+}
+
+.nav__1 {
+    color: white;
+    text-decoration: none;
+}
+
+/* A Propos */
+
+.p__nav__header__2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+.p__nav__header__2:hover{
+    background-color: $primary-color;
+    border-radius: 5px;
+    transition-delay: 0.15s;
+}
+
+.nav__2 {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Mes réalisations */
+
+.p__nav__header__3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+
+.p__nav__header__3:hover{
+    background-color: $primary-color;
+    border-radius: 5px;
+    transition-delay: 0.15s;
+}
+
+.nav__3 {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Contact */
+.p__nav__header__4 {
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+}
+.p__nav__header__4:hover {
+    background-color: $primary-color;
+    border-radius: 5px;
+    
+}
+
+.nav__4 {
+    text-decoration: none;
+    color: $primary-color;
+}
+
+.p__nav__header__4:hover .nav__4 {
+    color: black;
+    background-color: $primary-color;
+}

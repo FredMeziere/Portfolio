@@ -4,22 +4,22 @@
         <h1>Contactez-moi ici.</h1>
         <p>Vous pouvez également me contacter sur <a class="linkedin__link"
                 href="https://www.linkedin.com/in/fred-meziere/" target="_blank">linkedin </a> </p>
-        <form action="http://localhost:3000/contact" method="post">
+        <form action="http://localhost:3000/contact" method="post" class="formcontact">
             <div>
                 <label for="nom">Votre nom</label>
-                <input type="text" id="nom" name="yourname" placeholder="Votre nom/prénom ici" required>
+                <input type="text" id="name" placeholder="Votre nom/prénom ici" required>
             </div>
             <div>
                 <label for="email">Votre e-mail</label>
-                <input type="email" id="email" name="youremail" placeholder="monadresse@mail.com" required>
+                <input type="email"  id="email" placeholder="monadresse@mail.com" required>
             </div>
             <div>
                 <label for="email">Motif de votre contact</label>
-                <input type="text" id="motif" name="yoursubject" placeholder="Sujet de votre message" required>
+                <input type="text" id="subject" placeholder="Sujet de votre message" required>
             </div>
             <div>
                 <label for="message">Votre message</label>
-                <textarea id="message" name="yourmessage" placeholder="Votre message" required></textarea>
+                <textarea id="message" placeholder="Votre message" required></textarea>
             </div>
             <div>
                 <button type="submit">Envoyer mon message</button>

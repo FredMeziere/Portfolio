@@ -1,14 +1,38 @@
+const nodemailer = require("nodemailer");
+
 const contactController = {
 
-    contact: ('/contact', async (req, res, next) => {
-        const { yourname, youremail, yoursubject, yourmessage } = req.body;
-        try {
-            await sendMail(yourname, youremail, yoursubject, yourmessage);
-        } catch (error) {
-            res.send("Message Could not be Sent");
-        }
-        res.send("Message Succssfully Sent!");
-    })
-};
+    contact: (req, res) => {
+            
+            const transporter = nodemailer.createTransport({
+                service: 'gmail',
+                secure: false,
+                auth: {
+                    user: process.env.GMAIL_USER,
+                    pass: process.env.TESTPASSWORD
+                },
+        
+            })
+            const mailOptions = {
+                from: req.body.email,
+                to: process.env.GMAIL_USER,
+                subject: `Message de ${req.body.email}: ${req.body.subject}`,
+                text: req.body.message
+            }
+            
+            transporter.sendMail(mailOptions, (error, info)=>{
+                if(error){
+                    console.log(error)
+                    res.send('error');
+                } else {
+                    console.log('Email sent :' + info.response);
+                }
+            })
+            
+       }
+      
+    };
+
+
 
 module.exports = contactController;

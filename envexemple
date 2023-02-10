@@ -1,0 +1,4 @@
+PORT=3000
+GMAIL_USER=yourmailhere
+/*PASSWORD=yourpassword*/
+TESTPASSWORD= googleauthentpassword

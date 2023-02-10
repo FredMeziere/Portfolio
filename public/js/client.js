@@ -1,11 +1,11 @@
-const contactForm = document.querySelector('.formcontact')
+const contactForm = document.getElementsByClassName('.form__contact')
 let nom = document.getElementById('name');
 let email = document.getElementById('email');
 let subject = document.getElementById('subject');
 let message = document.getElementById('message');
 
-contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
+contactForm.addEventListener('submit', (e)=> {
+    e.preventDefault();
 
     let formData = {
         name: nom.value,
@@ -13,6 +13,8 @@ contactForm.addEventListener('submit', (event) => {
         subject: subject.value,
         message: message.value
     }
+
+console.log(formData);
 
     let xhr = new XMLHttpRequest();
     xhr.open('POST', "/contact");

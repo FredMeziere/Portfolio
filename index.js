@@ -15,9 +15,6 @@ app.use(express.static(__dirname + '/public'));
 
 app.use(router);
 
-app.get('/contact', (req, res)=> {
-    res.sendFile(__dirname + './app/views/main/contact.ejs')
-})
 
 app.listen(PORT, () => {
     console.log(`Server ready : http://localhost:${PORT}`);

@@ -5,13 +5,12 @@ const contactController = {
     contact: (req, res) => {
             
             const transporter = nodemailer.createTransport({
-                service: 'gmail',
-                secure: false,
+                service: 'Gmail',
                 auth: {
                     user: process.env.GMAIL_USER,
                     pass: process.env.TESTPASSWORD
                 },
-        
+                
             })
             const mailOptions = {
                 from: req.body.email,
@@ -19,7 +18,8 @@ const contactController = {
                 subject: `Message de ${req.body.email}: ${req.body.subject}`,
                 text: req.body.message
             }
-            
+            console.log(req.body, `req.body bon ?`);
+
             transporter.sendMail(mailOptions, (error, info)=>{
                 if(error){
                     console.log(error)
@@ -29,7 +29,11 @@ const contactController = {
                 }
             })
             
-       }
+       },
+
+       notFound: (req, res) => {
+        res.status(404).render('error/404');
+      },
       
     };
 

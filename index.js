@@ -4,6 +4,7 @@ const router = require("./app/router");
 const app = express();
 
 const PORT = process.env.PORT || 3000;
+process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 
 app.use(express.json());
 

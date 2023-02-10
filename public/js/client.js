@@ -1,11 +1,11 @@
-const contactForm = document.getElementsByClassName('.form__contact')
+const contactForm = document.getElementById('form__contact')
 let nom = document.getElementById('name');
 let email = document.getElementById('email');
 let subject = document.getElementById('subject');
 let message = document.getElementById('message');
 
-contactForm.addEventListener('submit', (e)=> {
-    e.preventDefault();
+contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
 
     let formData = {
         name: nom.value,
@@ -14,23 +14,24 @@ contactForm.addEventListener('submit', (e)=> {
         message: message.value
     }
 
-console.log(formData);
-
-    let xhr = new XMLHttpRequest();
-    xhr.open('POST', "/contact");
-    xhr.setRequestHeader('content-type', 'application/json');
-    xhr.onload = function(){
-        if(xhr.responseText == 'success'){
-            alert('L'/'email à été envoyé !');
-            nom.value = '';
-            email.value = '';
-            subject.value = '';
-            message.value = '';
+    fetch('/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => response.text())
+      .then(data => {
+        if (data === 'success') {
+          alert("email send");
+          nom.value = "";
+          email.value = "";
+          subject.value = "";
+          message.value = "";
         } else {
-            alert('Malheuresement il y a eu une erreur')
+          alert("Something went wrong");
         }
-    }
-
-xhr.send(JSON.stringify(formData));
+      });
 
 });

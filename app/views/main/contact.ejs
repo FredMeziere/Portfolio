@@ -1,15 +1,15 @@
 <%- include('../partials/header') %>
 
-    <div class="contactez-nous">
-        <h1>Contactez-moi ici.</h1>
-        <p>Vous pouvez également me contacter sur <a class="linkedin__link"
+<div class="contactez-nous">
+    <h1>Contactez-moi ici.</h1>
+    <p>Vous pouvez également me contacter sur <a class="linkedin__link"
                 href="https://www.linkedin.com/in/fred-meziere/" target="_blank">linkedin </a> </p>
-        <form action="http://localhost:3000/contact" method="post" class="form__contact">
-            <div>
-                <label for="nom">Votre nom</label>
-                <input type="text" id="name" placeholder="Votre nom/prénom ici" >
-            </div>
-            <div>
+                <form class="form__contact" id="form__contact">
+                    <div>
+                        <label for="nom">Votre nom</label>
+                        <input type="text" id="name" placeholder="Votre nom/prénom ici" >
+                    </div>
+                    <div>
                 <label for="email">Votre e-mail</label>
                 <input type="email" id="email" placeholder="monadresse@mail.com" >
             </div>
@@ -26,5 +26,7 @@
             </div>
         </form>
     </div>
-
+    
+    <script src="js/client.js" defer></script>
+    
     <%- include('../partials/footer') %>

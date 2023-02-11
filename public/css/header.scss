@@ -34,7 +34,6 @@ h1 {
     margin-left: 15px;
     color: white;
     font-weight: bolder;
-
 }
 
 .h1__f__strong {
@@ -55,7 +54,8 @@ h1 {
 }
 
 .h1__f__strong:hover {
-    background-color: white;
+    background: white;
+    color: $primary-color;
 }
 
 /*Acceuil */

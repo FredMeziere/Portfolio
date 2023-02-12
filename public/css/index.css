@@ -147,6 +147,33 @@ h1 {
   background-color: rgb(79, 175, 127);
 }
 
+.div__socialmedia {
+  opacity: 0.8;
+  background-color: rgb(79, 175, 127);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 15px;
+  top: 250px;
+  max-width: 100px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.a__div__social {
+  align-items: center;
+}
+
+.p__div__socialmedia {
+  padding: 5px;
+  margin: 0px;
+  text-align: center;
+}
+
+.img__banner {
+  margin: 10px;
+}
+
 /* ######### PARTIE MAIN ######### */
 main {
   align-items: center;

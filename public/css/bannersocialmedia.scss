@@ -1,0 +1,26 @@
+.div__socialmedia {
+    opacity: 0.80;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15px;
+    top: 250px;
+    max-width: 100px;
+    border-radius: 5px;
+    align-items: center;
+}
+.a__div__social {
+    align-items: center;
+}
+
+.p__div__socialmedia {
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+}
+
+
+.img__banner {
+    margin: 10px;
+}

@@ -25,12 +25,12 @@ contactForm.addEventListener('submit', (event) => {
       .then(data => {
         if (data === 'success') {
           alert("email send");
-          name.value = '';
-          email.value = '';
-          subject.value = '';
-          message.value = '';
+          name.value = "";
+          email.value = "";
+          subject.value = "";
+          message.value = "";
         } else {
-          alert(`An error has occurred: ${data}`);
+          alert("Something went wrong");
         }
       });
 });

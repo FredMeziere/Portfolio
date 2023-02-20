@@ -21,14 +21,14 @@ const contactController = {
 
 
         }
-        console.log(req.body);
 
         transporter.sendMail(mailOptions, (error) => {
             if (error) {
                 console.log(error);
-                return res.send('error');
+                res.sendStatus(500)
             } else {
-                res.send('Email sent');
+                console.log('Mail send');
+                res.sendStatus(200)
             }
         })
     }

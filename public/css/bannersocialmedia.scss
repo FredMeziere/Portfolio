@@ -5,13 +5,15 @@
     flex-direction: column;
     left: 15px;
     top: 250px;
-    max-width: 100px;
-    border-radius: 5px;
+    width: 80px;
+    border-radius: 15px;
     align-items: center;
 }
 
 .a__div__social {
-    display: flex;
+    align-items: center;
+    display: block;
+    margin-left: 1.5rem;
 }
 
 .p__div__socialmedia {
@@ -22,5 +24,7 @@
 }
 
 .img__banner {
-    margin: 10px;
+    height: 50%;
+    width: 50%;
+    padding: 5px;
 }

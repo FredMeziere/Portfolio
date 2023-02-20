@@ -1,5 +1,5 @@
 const contactForm = document.getElementById('form__contact')
-let nom = document.getElementById('name');
+let name = document.getElementById('name');
 let email = document.getElementById('email');
 let subject = document.getElementById('subject');
 let message = document.getElementById('message');
@@ -7,8 +7,8 @@ let message = document.getElementById('message');
 contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    let formData = {
-        name: nom.value,
+    const formData = {
+        name: name.value,
         email: email.value,
         subject: subject.value,
         message: message.value
@@ -25,13 +25,12 @@ contactForm.addEventListener('submit', (event) => {
       .then(data => {
         if (data === 'success') {
           alert("email send");
-          nom.value = "";
-          email.value = "";
-          subject.value = "";
-          message.value = "";
+          name.value = '';
+          email.value = '';
+          subject.value = '';
+          message.value = '';
         } else {
-          alert("Something went wrong");
+          alert(`An error has occurred: ${data}`);
         }
       });
-
 });

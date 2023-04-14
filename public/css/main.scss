@@ -5,6 +5,16 @@ main {
     align-content: center;
 }
 
+.maindiv__mainpage {
+    display: flex;
+    flex-direction: column;
+}
+
+.p__mainpage {
+    color: red;
+ }
+/* DIV INTO */
+
 .div__main__intro {
     align-items: center;
 }
@@ -42,8 +52,55 @@ main {
     border-radius: 5px;
 }
 
-.span__point__main__div__h2 {
+.span__point1__main {
     color: $primary-color;
-    font-size: 32px;
+    font-size: 64px;
+    animation: blinker 3s linear infinite;
 }
 
+.span__point2__main {
+    color: $primary-color;
+    font-size: 64px;
+    animation: blinker 3s linear infinite;
+    animation-delay: 1s;
+}
+
+.span__point3__main {
+    color: $primary-color;
+    font-size: 64px;
+    animation: blinker 3s linear infinite;
+    animation-delay: 2s;
+}
+
+.span__2__main__div__h2 {
+    animation: blinker 4s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+  /* DIV SKILLS */
+
+.div__skills__main {
+    align-items: center;
+    text-align: center;
+    color: white;
+ }
+
+ .h2__skills__main {
+    color: rgb(255, 255, 255);
+    font-size: 46px;
+ }
+
+ .p__mainpage {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+ }
+
+ .img__skills {
+    width: 10%;
+ }

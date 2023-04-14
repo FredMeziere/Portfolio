@@ -1,3 +1,18 @@
+.main__apropos {
+display: flex;
+width: 90%;
+}
+
 .main__div__apropos {
-    display: flex;
+    align-items: center;
+}
+
+.apropos__p {
+    text-align: center;
+    color:  $primary-color;
+    flex-direction: column;
+}
+.my__image {
+    width: 20%;
+    align-items: center;
 }

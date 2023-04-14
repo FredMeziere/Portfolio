@@ -184,6 +184,16 @@ main {
   align-content: center;
 }
 
+.maindiv__mainpage {
+  display: flex;
+  flex-direction: column;
+}
+
+.p__mainpage {
+  color: red;
+}
+
+/* DIV INTO */
 .div__main__intro {
   align-items: center;
 }
@@ -221,9 +231,54 @@ main {
   border-radius: 5px;
 }
 
-.span__point__main__div__h2 {
+.span__point1__main {
   color: rgb(79, 175, 127);
+  font-size: 64px;
+  animation: blinker 3s linear infinite;
+}
+
+.span__point2__main {
+  color: rgb(79, 175, 127);
+  font-size: 64px;
+  animation: blinker 3s linear infinite;
+  animation-delay: 1s;
+}
+
+.span__point3__main {
+  color: rgb(79, 175, 127);
+  font-size: 64px;
+  animation: blinker 3s linear infinite;
+  animation-delay: 2s;
+}
+
+.span__2__main__div__h2 {
+  animation: blinker 4s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+/* DIV SKILLS */
+.div__skills__main {
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.h2__skills__main {
+  color: rgb(255, 255, 255);
+  font-size: 46px;
+}
+
+.p__mainpage {
+  color: rgb(255, 255, 255);
   font-size: 32px;
+}
+
+.img__skills {
+  width: 10%;
 }
 
 .main__div__404 {
@@ -364,13 +419,31 @@ label {
   text-align: center;
 }
 
+.main__apropos {
+  display: flex;
+  width: 90%;
+}
+
+.main__div__apropos {
+  align-items: center;
+}
+
+.apropos__p {
+  text-align: center;
+  color: rgb(79, 175, 127);
+  flex-direction: column;
+}
+
+.my__image {
+  width: 20%;
+  align-items: center;
+}
+
 /* ######### PARTIE FOOTER ######### */
 footer {
   background: linear-gradient(15deg, rgb(76, 150, 107) 0%, rgb(79, 175, 127) 100%);
-  position: absolute;
+  width: 100%;
   bottom: 0;
-  left: 0;
-  width: 99.9%;
   text-align: center;
   color: rgb(30, 29, 49);
 }
@@ -378,6 +451,20 @@ footer {
 .p__footer {
   color: rgb(30, 29, 49);
   font-weight: 600;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(30, 29, 49);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 29, 49);
+  border-radius: 20px;
+  border: 3px solid rgb(79, 175, 127);
 }
 
 /*# sourceMappingURL=index.css.map */
